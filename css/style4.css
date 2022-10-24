@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+html {
+    margin: 0;
+    background-color: rgb(236, 235, 235);
+    width: 100vw;
+}
+
+body {
+    margin: 0;
+}
+
+table {
+    width: 100vw;
+    border: 1px solid rgb(12, 12, 12);
+    border-collapse: collapse;
+    color: rgb(66, 65, 65);
+    background-color: white;
+    overflow: scroll;
+}
+
+thead tr {
+    top: 0;
+    position: sticky;
+    background-color: white;
+    border-bottom: 1px solid rgb(15, 4, 63);
+    height: 70px;
+}
+
+tbody tr {
+    border: 1px solid #dddddd;
+    height: 60px;
+    overflow: hidden;
+}
+
+table td,
+th {
+    font-family: "poppins";
+    padding: 9px;
+    text-align: center;
+}
+
+#bttn button {
+    border-style: hidden;
+    border-radius: 10px;
+    width: auto;
+    height: 30px;
+    font-family: "poppins";
+    font-weight: 500;
+    background-color: #dddddd;
+    padding: 3px 8px;
+}
+
+#bttn button:hover {
+    color: white;
+    background-color: #3e3e3e;
+}
+#bin {
+    width: 70px;
+    height: 70px;
+}
+
+#bttn1 #add {
+    border-style: 1px solid black;
+    border-radius: 10px;
+    width: 120px;
+    height: 30px;
+    font-family: "poppins";
+    font-weight: 700;
+    background-color: #ffffff;
+}
+
+#bttn1 #add:hover {
+    color: rgb(255, 252, 252);
+    background-color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(20, 3, 96);
+}
+a:hover{
+    color: #656565;
+}

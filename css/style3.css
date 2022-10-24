@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-family: "poppins";
+    color: rgb(31, 1, 108);
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px #7c7c7c;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 500px;
+    margin-bottom: 0;
+}
+
+.first a {
+    color: rgb(31, 1, 108);
+    padding-left: 20px;
+}
+
+.box1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 23px;
+}
+
+.box1 a>button {
+    border-radius: 8px;
+    width: 140px;
+    height: 40px;
+    font-size: 17px;
+    font-family: "poppins";
+    border: 0;
+    background-color: rgb(31, 1, 108);
+    color: white;
+    box-shadow: 5px 5px  #ccc ;
+    cursor: pointer;
+}
+
+.box1 a>button:hover {
+    background-color: rgb(15, 4, 63);
+}
+
+.box1 a>button:active {
+    transform: translate(3px);
+    box-shadow: 2px 2px #7d7d7d;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.box2 iframe {
+    width: 100vw;
+    height: 73vh;
+    border: 1px solid rgb(15, 4, 63);
+}

@@ -1,0 +1,12 @@
+<?php 
+session_start();
+if($_SESSION["user"]=="admin")
+{session_unset();
+session_destroy();
+header("Location:http://127.0.0.1/debugtracker/php/connecte.html");}
+elseif($_SESSION["user"]=="tech"){
+session_unset();
+session_destroy();
+header("Location:http://127.0.0.1/debugtracker/php/connecte1.php");
+}
+?>

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    width: 100vw;
+    height: auto;
+    padding: 0%;
+    overflow: visible;
+}
+.section1 {
+    display: flex;
+    margin-top: 60px;
+}
+.section1 .box1 {
+ padding-left: 50px;
+}
+/* .section1 .box1 #elem2{
+    margin-top: 80px;
+   } */
+.section1 .box3 {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 .box3 #fix {
+    max-height: 500px;
+    max-width: 500px;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+.soussection{
+    display: flex;
+    gap: 50px;
+}
+.section2{
+    width: 40vw;
+    display:flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box4{ display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+form h1 {
+    display: inline-block;
+    font-size: 20px;
+    left: 50%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(34, 22, 80);
+    font-weight: 700;
+}
+
+.red {
+    display: inline-block;
+    color: red;
+}
+
+form input[type=submit] {
+    border-style: solid 2px;
+    border-radius: 4px;
+    width: 120px;
+    height: 30px;
+    font-family: "poppins";
+    font-weight: 500;
+    margin-top: 15px;
+    border-color: #616161;
+}
+form input[type=button]{
+    border-style: solid 2px;
+    border-radius: 4px;
+    width: 120px;
+    height: 30px;
+    font-family: "poppins";
+    font-weight: 500;
+    margin-top: 15px;
+    border-color: #616161;
+}
+form input[type=text],
+select {
+    width: 300px;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.flex-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.flex-header img {
+    max-width: 115px;
+    max-height: 87px;
+
+}
+
+form p,
+label {
+    font-family: 'poppins';
+    font-size: smaller;
+    font-weight: 500;
+    color: #0a032c;
+    margin-bottom: 9px;
+    margin-top: 30px;
+}
+
+form hr {
+    margin-bottom: 30px;
+    color: #181818;
+}
+.box4 div{
+    margin-left: 6px;
+}

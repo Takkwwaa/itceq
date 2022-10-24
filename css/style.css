@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap&family=Roboto+Condensed&display=swap');
+
+* {
+	margin: 0px;
+}
+
+html {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(233, 233, 233);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.main{	
+	width: 800px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 8px rgb(47, 45, 45);
+	border-radius: 5px;
+}
+.section {
+	background-color: rgb(20, 3, 96);
+	width: 400px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.back {
+	font-family: "poppins";
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: white;
+	align-self: flex-start;
+	margin-top: 25px;
+	text-decoration: none;
+}
+.section form {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 50px;
+	flex-direction: column;
+}
+.photo img{ 	
+	width: 400px;
+	height: 600px;
+}
+.section form p{
+	font-size: 35px;
+	color: white;
+	font-family: "poppins";
+	align-items: center;
+	font-weight: 600;
+}
+.section form input[type=email],input[type=password] {
+	width: 170px;
+	height: 35px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+.section form .mail {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	align-self: flex-end;
+	margin-right: 45px;
+}
+
+.section form .pass {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	align-self: flex-end;
+	margin-right: 45px;
+}
+
+ form .buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+ form input[type=submit] ,input[type=reset]{
+	width: 110px;
+	height: 30px;
+	border: 2px solid rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 13px;
+	background-color: rgb(20, 3, 96);
+	color: white;
+	font-weight: 600;
+}
+ form input[type=reset]:hover,input[type=submit]:hover{
+	color: rgb(31, 1, 108);
+	background-color: #ffffff;
+}
+.section form label {
+	font-family: "poppins";
+	color: white;
+	font-size: 16px;
+	display: block;
+}

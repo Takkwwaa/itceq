@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap&family=Roboto+Condensed&display=swap');
+
+* {
+  margin: 0;
+  font-family: "poppins";
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+h3 {
+  color: rgb(135, 30, 30);
+  font-weight: 600;
+}
+select {
+  width: 200px;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: rgb(20, 3, 96);
+  color: white;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0f0b4b;
+}
+
+#global {
+  border-radius: 5px;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  align-items: flex-start;
+  padding-left: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgb(47, 45, 45);
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+form textarea {
+  width: 300px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.container{display: flex;}

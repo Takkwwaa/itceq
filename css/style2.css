@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+*{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+body{overflow: visible;}
+.section1{
+    position:sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40%;
+    background-color: white;
+    border-bottom: rgb(28, 28, 28) 3px solid;
+}
+.section1 .navbar{
+    display: flex;
+    gap: 40px;
+    font-family: "poppins";
+    font-weight: 600;
+}
+.section1 .navbar a{    text-decoration: none;}
+.section1 .navbar a:visited{color:rgb(28, 28, 32);}
+.section1 .navbar a:hover{color:rgb(57, 24, 24);}
+.section1 img{
+    max-width: 115px;
+    max-height: 87px;
+}
+.section2 {
+    background-image: url("http://127.0.0.1/debugtracker/img/Rectangle 1.png") ;
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+}
+.section2 .hero{
+    display: flex;
+    flex-direction: column;
+    max-width: 30vw;
+    color: rgb(255, 255, 255);
+    font-family: "poppins";
+    margin-top: 150px;
+    margin-left: 150px;
+    gap: 10px;
+}
+.section2 .hero .p1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.section2 .hero .p2{
+    font-size: 20px;
+}
+.section2 .btn{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.section2 .btn a{text-decoration: none;}
+.section2 .btn button{
+    background-color: #4a2929;
+    color: white;
+    font-family: "poppins";
+    height: 80px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 7px;
+    font-size: 19px;
+   font-weight: 500;
+}
+.section3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.section3 p {
+
+    max-width: 30vw;
+    font-family: "poppins";
+    font-size: 20px;
+}
+.section3 img {
+    max-width: 30vw;
+}
+.section4{
+    display: flex;
+    max-width: 100vw;
+    height: 30vh;
+    background-color: #F5F5F5;
+    justify-content: center;    
+    gap: 300px;
+}
+.section4 .addresscontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+}
+.section4 .addresscontainer div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.section4 .addresscontainer div img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.section4 .addresscontainer div p{
+    font-family: "poppins";
+    color: #646464;
+}
+.section4 .about {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+}
+.section4 .about a{
+    font-family: "poppins";
+    color: #646464;
+    text-decoration: none;
+}
+.section4 .socialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 15px;
+}
+.section4 .socialmedia img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    transition:transform 0.1s ;
+}
+.section4 .socialmedia img:hover{
+    transform:scale(1) ;
+    width: 40px;
+    height: 40px;
+}
+.section4 .ligne{
+    margin-top: 30px;
+    border-left: #646464 1px solid;
+    height: 140px;
+    align-items: center;
+
+}
+.section4 .fusion{
+    display: flex;
+    gap: 20px;
+}
