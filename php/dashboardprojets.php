@@ -61,9 +61,8 @@ if ($_SESSION["user"] != "admin") {
                 if (mysqli_affected_rows($con) < 1) {
                     echo "erreur" . "<br>" . mysqli_error($con);
                 }
-
         ?>
-                <tr>
+                <tr id="<?= $tab[0]?>">
                     <td style="color:rgb(20, 3, 96) ;"><?= $tab[1] ?></td>
                     <td><?= $tab[2] ?></td>
                     <td><?= $tab[3] ?></td>
@@ -77,13 +76,17 @@ if ($_SESSION["user"] != "admin") {
                         <td id="bttn"><a href='respo1.php?id1=<?= $tab[0] ?>'><button type='submit' name="btn1"><?= get_np($con, $tab[6]); ?></button></a></td>
                     <? } else { ?>
                         <td id="bttn"><a href='respo1.php?id1=<?= $tab[0] ?>'><button type='submit' name="btn1">Sélectionner</button></a></td> <? } ?>
-                    <td><img src="http://127.0.0.1/debugtracker/img/corbeille.png" id="bin" style="width: 30px;height: 30px;"></td>
+                    <td><button id="bin"><img src="http://127.0.0.1/debugtracker/img/corbeille.png" style="width: 30px;height: 30px;"></button><input type="hidden" name="id"></td>
                 </tr>
                 <script>
                     document.getElementById('bin').addEventListener('click', function() {
-                                swal.fire();
-                                $req = mysqli_query($con, "DELETE FROM projets WHERE ID_projet=$id");
+                                const xmlhttp = new XMLHttpRequest();
+                                xmlhttp.open("POST", "http://127.0.0.1/debugtracker/php/supprime.php?id=" +<?= $tab[0]?>,true);
+                                xmlhttp.send();
+                                e=document.getElementById(<?=$tab[0]?>);
+                                e.parentElement.removeChild(e);
                             }
+                            )
                 </script>
         <?php
 
