@@ -36,7 +36,7 @@
             width: 25%;
             background-color: #0f0b4b;
             color: white;
-            padding: 10px 15px;
+            padding: 8px 5px;
             margin: 8px 0;
             border: none;
             border-radius: 4px;
@@ -83,31 +83,35 @@
                 </div>
             </div>
             <script>
+                var test = false;
                 var radios = document.forms["form"].elements["R"];
                 for (var i = 0, max = radios.length; i < max; i++) {
                     radios[i].onclick = function() {
-                if (this.value == 'F') {
-                    console.log(this.value);
-                    var elem = document.createElement("textarea");
-                    var f = document.getElementById('form');
-                    var btn = document.getElementById('btn');
-                    elem.setAttribute("id", "text");
-                    elem.setAttribute("name", "txt");
-                    elem.setAttribute("required", "true");
-                    f.insertBefore(elem, btn);
-                    let text = document.createTextNode("Donnez plus de détailles :");
-                    text.setAttribute("id", "lib");
-                    f.insertBefore(text, elem);}
-                    else if(typeof(document.getElementById('text')) != 'undefined' && document.getElementById('text') != null && this.value != 4)
-                        {
-                            console.log(123);
+                        if (this.value == 'F' && test == false) {
+                            test = true;
+                            console.log(this.value);
+                            var elem = document.createElement("textarea");
+                            var f = document.getElementById('form');
+                            var btn = document.getElementById('btn');
+                            elem.setAttribute("id", "text");
+                            elem.setAttribute("name", "txt");
+                            elem.setAttribute("required", "true");
+                            f.insertBefore(elem, btn);
+                            let t = document.createTextNode("Donnez plus de détailles :");
+                            var text = document.createElement("p");
+                            text.setAttribute("id", "lib");
+                            text.appendChild(t);
+                            f.insertBefore(text, elem);
+                        } else if (typeof(document.getElementById('text')) != 'undefined' && document.getElementById('text') != null && this.value != 4) {
+                            test = false;
                             var txt = document.getElementById('text');
                             var lib = document.getElementById('lib');
                             txt.parentElement.removeChild(txt);
-                            txt.parentElement.removeChild(lib);
+                            lib.parentElement.removeChild(lib);
                         }
-                
-                }};
+
+                    }
+                };
             </script>
             <input type="submit" value="Envoyer" name="submit" id="btn">
         </form>

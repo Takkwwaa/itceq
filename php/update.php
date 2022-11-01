@@ -36,7 +36,8 @@ mysqli_select_db($con, "debugtracker"); ?>
                 echo $nptech[2] . '<br>'; ?>
                 <script>
                     document.getElementById('listetat').addEventListener('change', function() {
-                        if (this.value == 4) {
+                        var test=false;
+                        if (this.value == 4 &&test==false) {
                             var elem = document.createElement("textarea");
                             var f = document.getElementById('form');
                             var btn = document.getElementById('btn');
@@ -44,16 +45,19 @@ mysqli_select_db($con, "debugtracker"); ?>
                             elem.setAttribute("name", "text");
                             elem.setAttribute("required", "true");
                             f.insertBefore(elem, btn);
-                            let text = document.createTextNode("Donnez plus de détailles :");
+                            let t = document.createTextNode("Donnez plus de détailles :");
+                            var text = document.createElement("p");
                             text.setAttribute("id", "lib");
-                            f.insertBefore(text,elem);}
+                            text.appendChild(t);
+                            f.insertBefore(text,elem);
+                        test=true;}
                         else if(typeof(document.getElementById('text')) != 'undefined' && document.getElementById('text') != null && this.value != 4)
                         {
-                            console.log(123);
+                            test=false;
                             var txt = document.getElementById('text');
                             var lib = document.getElementById('lib');
                             txt.parentElement.removeChild(txt);
-                            txt.parentElement.removeChild(lib);
+                            lib.parentElement.removeChild(lib);
                         }
                     });
                 </script>
